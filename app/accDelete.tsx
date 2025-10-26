@@ -10,7 +10,7 @@ export default function Index() {
                 <TouchableOpacity onPress={() => router.back()}>
                     <Image source={require('./../assets/images/arrow.png')} style={accDeleteStyles.arrow}/>
                 </TouchableOpacity>
-                <Text style={accDeleteStyles.headerText}>Settings</Text>
+                <Text style={accDeleteStyles.headerText}>Account Deletion</Text>
             </View>
             <View style={accDeleteStyles.line}/>
             
