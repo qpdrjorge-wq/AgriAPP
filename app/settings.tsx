@@ -39,8 +39,11 @@ export default function Index() {
               <View style = {settingStyles.beigeCard}>
                 <View style = {settingStyles.container}>
                   <Text style = {settingStyles.optionLabel}>E-Wallets</Text>
-                  <Image source = {(require('./../assets/images/buttonArrow.png'))}
-                  style = {settingStyles.buttonArrow}/>
+                  <TouchableOpacity
+                    onPress={() => router.push('/eWallet')}>
+                    <Image source = {(require('./../assets/images/buttonArrow.png'))}
+                    style = {settingStyles.buttonArrow}/>
+                  </TouchableOpacity>
                 </View>
               </View>
             </View>
