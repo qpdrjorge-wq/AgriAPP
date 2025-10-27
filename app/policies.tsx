@@ -40,8 +40,7 @@ export default function Policies() {
             <Text style={policiesStyles.policyDetails}>
               AgriCraft supports secure and accessible payment methods, including e-wallets (GCash, PayMaya), and cash on 
               delivery (COD). All transactions are processed securely, and transaction history is maintained for both buyers 
-              and sellers. A 24-hour cancellation window is provided for order modifications, and refunds are issued for undelivered 
-              goods.
+              and sellers.
             </Text>
             <Text style={policiesStyles.policySection}>II. Return & Refund Policy</Text>
             <Text style={policiesStyles.policyDetails}>
@@ -107,4 +106,5 @@ export default function Policies() {
     </ScrollView>
   );
 }
+
 
