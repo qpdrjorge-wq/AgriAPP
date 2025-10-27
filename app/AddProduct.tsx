@@ -17,14 +17,8 @@ export default function AddProduct() {
 
   const categories: Record<string, string[]> = {
     Handicrafts: [
-      "3D Printing",
-      "Arts",
-      "Bathroom",
-      "Crochet",
-      "Decor",
-      "Organizers",
-      "Pottery",
-      "Woodwork",
+      "3D Printing", "Arts", "Bathroom", "Crochet", 
+      "Decor", "Organizers", "Pottery", "Woodwork",
     ],
     Produce: ["Artisanal", "Fruits", "Grains", "Vegetables"],
   };
@@ -33,18 +27,13 @@ export default function AddProduct() {
 
   return (
     <View style={styles.container}>
-      <View style={styles.header}>
-        <TouchableOpacity onPress={() => router.back()} style={styles.backButton}>
-          <Image
-            source={{
-              uri: "https://cdn-icons-png.flaticon.com/512/93/93634.png",
-            }}
-            style={styles.backIcon}
-          />
+      <View style={{ flexDirection: "row", marginTop: 50 }}>
+        <TouchableOpacity onPress={() => router.back()}>
+          <Image source={require('./../assets/images/arrow.png')} style={styles.arrow}/>
         </TouchableOpacity>
-        <Text style={styles.headerTitle}>Add Product</Text>
+        <Text style={styles.headerText}>Add Product</Text>
       </View>
-      <View style={styles.line} />
+      <View style={styles.line}/>
 
       <ScrollView contentContainerStyle={styles.scrollContainer}>
         <TouchableOpacity
@@ -52,13 +41,11 @@ export default function AddProduct() {
           onPress={() => {}}
           style={[styles.imageBox, styles.shadow]}
         >
-          <View style={styles.imageInner}>
-            <Image
-              source={{ uri: "https://cdn-icons-png.flaticon.com/512/748/748113.png" }}
-              style={styles.placeholderIcon}
-            />
-            <Text style={styles.addImageText}>Tap to add product image</Text>
-          </View>
+          <Image
+            source={{ uri: "https://cdn-icons-png.flaticon.com/512/748/748113.png" }}
+            style={styles.placeholderIcon}
+          />
+          <Text style={styles.addImageText}>Tap to add product image</Text>
         </TouchableOpacity>
 
         <View style={[styles.inputRow, styles.shadow]}>
@@ -84,7 +71,7 @@ export default function AddProduct() {
           </TouchableOpacity>
         </View>
 
-        {mainCategory ? (
+        {mainCategory && (
           <View style={[styles.inputRow, styles.shadow]}>
             <Text style={styles.label}>Subcategory</Text>
             <TouchableOpacity
@@ -96,7 +83,7 @@ export default function AddProduct() {
               </Text>
             </TouchableOpacity>
           </View>
-        ) : null}
+        )}
 
         <View style={[styles.amountContainer, styles.shadow]}>
           <Text style={styles.label}>Amount</Text>
