@@ -2,7 +2,7 @@ import { router } from 'expo-router';
 import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
 import { accDeleteStyles } from './../assets/styles/accDeleteStyles';
 
-export default function Index() {
+export default function accDelete() {
   return (
     <ScrollView>
         <View>
@@ -19,3 +19,4 @@ export default function Index() {
     </ScrollView>
   );
 }
+
