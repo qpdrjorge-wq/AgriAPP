@@ -36,7 +36,7 @@ export const accDeleteStyles = StyleSheet.create({
 
     whiteCard: {
         height: 400,
-        width: 350,
+        width: '80%',
         backgroundColor: 'white',
         alignSelf: 'center',
         borderRadius: 10,
@@ -53,8 +53,8 @@ export const accDeleteStyles = StyleSheet.create({
     },
 
     warningIMG:{
-        height: 64,
-        width: 64,
+        height: '20%',
+        width: '20%',
         alignSelf: 'center',
 
     },
@@ -68,7 +68,7 @@ export const accDeleteStyles = StyleSheet.create({
 
     deleteAccCard: {
         height: 65,
-        width: 350,
+        width: '85%',
         backgroundColor: '#eb383bff',
         alignSelf: 'center',
         marginTop: 28,
@@ -87,7 +87,7 @@ export const accDeleteStyles = StyleSheet.create({
 
     cancelCard: {
         height: 65,
-        width: 350,
+        width: '85%',
         backgroundColor: '#rgba(255, 255, 255, 0.3)',
         alignSelf: 'center',
         marginTop: 20,
