@@ -1,6 +1,6 @@
 import { router } from 'expo-router';
 import { Alert, Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
-import { indexStyles } from './../assets/styles/indexStyles';
+import { indexStyles } from '../assets/styles/indexStyles';
 
 export default function Index() {
   return (
@@ -49,11 +49,13 @@ export default function Index() {
         </View>
 
         <View style = {indexStyles.row2Container}>
-          <View style={indexStyles.setupShopCard}>
+          <TouchableOpacity
+            style={indexStyles.setupShopCard}
+            onPress={() => router.push('/myShop')}>
             <Image source = {require('./../assets/images/shopIMG.png')} 
             style={indexStyles.setupCardLogo}/>
             <Text style={indexStyles.setupCardText}>Set Up/{"\n"}Manage Shop</Text>
-          </View>
+          </TouchableOpacity>
           
           <TouchableOpacity 
             style={indexStyles.aboutCard}
