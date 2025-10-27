@@ -1,39 +1,32 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
+  headerText: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    color: 'black',
+    marginLeft: 20,
+    marginTop: 17,
+  },
+
+  arrow: {
+    width: 35,
+    height: 35, 
+    marginLeft: 26,
+    marginTop: 20,
+  },
+
+  line: {
+    borderBottomColor: "#ccc",
+    borderBottomWidth: 2,
+    width: "90%",
+    alignSelf: "center",
+    marginVertical: 15,
+  },
+
   container: { 
     flex: 1, 
     backgroundColor: "#EEF3F8" 
-  },
-
-  header: {
-    flexDirection: "row",
-    alignItems: "center",
-    paddingHorizontal: 20,
-    paddingTop: 20,
-    paddingBottom: 10,
-  },
-  backButton: { 
-    width: 36, 
-    height: 36, 
-    justifyContent: "center", 
-    alignItems: "center" 
-  },
-  backIcon: { 
-    width: 24, 
-    height: 24, 
-    tintColor: "#111111" 
-  },
-  headerTitle: { 
-    fontSize: 18, 
-    fontWeight: "bold", 
-    marginLeft: 12, 
-    color: "#111111" 
-  },
-  line: { 
-    height: 1, 
-    backgroundColor: "#CCCCCC", 
-    marginHorizontal: 20 
   },
 
   scrollContainer: { 
@@ -48,10 +41,6 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     marginBottom: 20,
-  },
-  imageInner: { 
-    justifyContent: "center", 
-    alignItems: "center" 
   },
   placeholderIcon: { 
     width: 48, 
@@ -136,7 +125,6 @@ export const styles = StyleSheet.create({
     marginBottom: 20,
     width: 250,
     alignSelf: "flex-start",
-    justifyContent: "flex-start",
   },
 
   priceContainer: {
@@ -149,13 +137,11 @@ export const styles = StyleSheet.create({
     marginBottom: 20,
     width: 250,
     alignSelf: "flex-start",
-    justifyContent: "flex-start",
   },
 
   amountRow: {
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "flex-start",
     gap: 8,
     marginLeft: 12,
   },
