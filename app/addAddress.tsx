@@ -3,7 +3,7 @@ import { Image, ScrollView, Text, TextInput, TouchableOpacity, View } from "reac
 import { addAddressStyles } from '../assets/styles/addAddressStyles';
 
 
-export default function Index() {
+export default function addAddress() {
     return (
         <ScrollView contentContainerStyle = {{paddingBottom:100}}>
             <View>
@@ -94,4 +94,5 @@ export default function Index() {
             </View>
         </ScrollView>
     )
+
 };
