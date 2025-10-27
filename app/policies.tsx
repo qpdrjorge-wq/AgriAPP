@@ -45,7 +45,7 @@ export default function Policies() {
             </Text>
             <Text style={policiesStyles.policySection}>II. Return & Refund Policy</Text>
             <Text style={policiesStyles.policyDetails}>
-              Buyers may return damaged or defective items within three days of delivery. For change-of-mind returns, buyers 
+              Buyers may return damaged or defective items after delivery. For change-of-mind returns, buyers 
               must adhere to the individual seller's shop policy. To initiate a return, buyers should first contact the seller. 
               If unresolved, the issue can be escalated to AgriCraft admin for assistance.
             </Text>
@@ -107,3 +107,4 @@ export default function Policies() {
     </ScrollView>
   );
 }
+
