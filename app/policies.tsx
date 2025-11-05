@@ -42,12 +42,6 @@ export default function Policies() {
               delivery (COD). All transactions are processed securely, and transaction history is maintained for both buyers 
               and sellers.
             </Text>
-            <Text style={policiesStyles.policySection}>II. Return & Refund Policy</Text>
-            <Text style={policiesStyles.policyDetails}>
-              Buyers may return damaged or defective items after delivery. For change-of-mind returns, buyers 
-              must adhere to the individual seller's shop policy. To initiate a return, buyers should first contact the seller. 
-              If unresolved, the issue can be escalated to AgriCraft admin for assistance.
-            </Text>
             
             <View style={policiesStyles.whiteLine}/>
 
@@ -68,9 +62,8 @@ export default function Policies() {
             </Text>
             <Text style={policiesStyles.policySection}>III. Shop Policies</Text>
             <Text style={policiesStyles.policyDetails}>
-              Sellers can create their own return and refund policies, provided they meet AgriCraft's minimum standards. 
-              Sellers are expected to maintain up-to-date shop information, respond to customer inquiries promptly, and process 
-              orders in a timely manner. Shop policies must be clearly communicated to buyers.
+              Sellers should adhere to the app's policies listed ensuring the products they sell are authentic and are not counterfeit products, provided they meet AgriCraft's minimum standards. 
+              Sellers are expected to maintain up-to-date shop information and process orders in a timely manner. Shop policies must be clearly communicated to buyers.
             </Text>
 
             <View style={policiesStyles.whiteLine}/>
@@ -106,5 +99,6 @@ export default function Policies() {
     </ScrollView>
   );
 }
+
 
 
